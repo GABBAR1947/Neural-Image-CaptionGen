@@ -1,2 +1,97 @@
-# CSE-522-Project
+
 Source files for "Neural Image Caption Generator"
+
+========
+TRAIN
+========
+
+Baseline Model: model_basic.py
+Train: python train_basic.py
+{  
+  -h, --help            show this help message and exit
+  --batch-size BATCH_SIZE
+                        size of batch
+  --epochs EPOCHS       num epochs
+  --embed-dim EMBED_DIM
+                        size of embeddings
+  --buffer-size BUFFER_SIZE
+                        size of buffer
+  --units UNITS         units
+  --vocab VOCAB         vocabulary size
+  --feat FEAT           shape of features
+}
+
+
+Advanced Model: model.py
+Train: python train.py
+{
+  -h, --help            show this help message and exit
+  --batch-size BATCH_SIZE
+                        size of batch
+  --epochs EPOCHS       num epochs
+  --embed-dim EMBED_DIM
+                        size of embeddings
+  --buffer-size BUFFER_SIZE
+                        size of buffer
+  --units UNITS         units
+  --vocab VOCAB         vocabulary size
+  --feat FEAT           shape of features
+  --att ATT             shape of attention features
+}
+
+=========
+EVALUATE
+=========
+
+python eval.py
+
+{
+	usage: eval.py [-h] [--model MODEL] [--batch-size BATCH_SIZE] [--epochs EPOCHS] [--embed-dim EMBED_DIM] [--buffer-size BUFFER_SIZE] [--units UNITS]
+               [--vocab VOCAB] [--feat FEAT] [--att ATT]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --model MODEL         basic/advanced
+  --batch-size BATCH_SIZE
+                        size of batch
+  --epochs EPOCHS       num epochs
+  --embed-dim EMBED_DIM
+                        size of embeddings
+  --buffer-size BUFFER_SIZE
+                        size of buffer
+  --units UNITS         units
+  --vocab VOCAB         vocabulary size
+  --feat FEAT           shape of features
+  --att ATT             shape of attention features
+}
+
+========================
+Software Requirements:
+========================
+
+Python 3.5
+Tensorflow 2.3.1
+Scikit-learn 0.22
+nltk 3.5.
+numpy 1.19.4
+tqdm 4.36.1
+overrides 2.0
+spacy 2.2.1
+matplotlib 3.1.1
+
+
+
+========================
+References
+========================
+
+https://github.com/nikhilmaram/Show_and_Tell
+https://github.com/jazzsaxmafia/show_attend_and_tell.tensorflow
+https://github.com/dianaglzrico/neural-visual-storyteller
+https://github.com/yuanxiaosc/Image-Captioning
+https://medium.com/swlh/image-captioning-using-attention-mechanism-f3d7fc96eb0e
+https://www.tensorflow.org/tutorials/text/image_captioning
+
+
+
+
