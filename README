@@ -87,6 +87,27 @@ overrides 2.0
 spacy 2.2.1
 matplotlib 3.1.1
 
+======================
+FILES
+======================
+
+1. include.py - all imports
+2. data_download.py - download MS COCO dataset
+3. COCO-process.py - cleaning and processing data
+4. CNN.py - processing data to input to Inception V3/ Vgg16
+5. model.py - attention model
+6. model_basic.py - baseline encoder-decoder model
+7. train.py - train advanced model
+8. train_basic.py - train baseline
+9. eval.py - evaluate on test set
+
+
+=======================
+GPU
+=======================
+Tesla p100
+CUDA 9.2
+cuDNN 7.2.1
 
 
 ========================
