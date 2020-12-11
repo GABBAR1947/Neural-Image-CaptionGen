@@ -46,7 +46,7 @@ EVALUATE
 python eval.py
 
 {
-	usage: eval.py [-h] [--model MODEL] [--batch-size BATCH_SIZE] [--epochs EPOCHS] [--embed-dim EMBED_DIM] [--buffer-size BUFFER_SIZE] [--units UNITS]
+usage: eval.py [-h] [--model MODEL] [--batch-size BATCH_SIZE] [--epochs EPOCHS] [--embed-dim EMBED_DIM] [--buffer-size BUFFER_SIZE] [--units UNITS]
                [--vocab VOCAB] [--feat FEAT] [--att ATT]
 
 optional arguments:
