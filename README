@@ -65,6 +65,14 @@ optional arguments:
   --att ATT             shape of attention features
 }
 
+======================
+METRICS
+======================
+eval.py
+1. METEOR
+2. BLEU - 1,2,3,4
+
+
 ========================
 Software Requirements:
 ========================
