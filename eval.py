@@ -108,7 +108,8 @@ def main():
     for i in range(len(ORIG)):
         METEORscore = METEORscore + nltk.translate.meteor_score.meteor_score([ORIG[i]], PRED[i])
     print(METEORscore/float(len(ORIG)))
-
+    
+    #change n-gram accordingly
     BLEUscore = 0.
     for i in range(len(ORIG)):
         BLEUscore += sentence_bleu([ORIG[i].strip().split()], PRED[i].strip().split())
