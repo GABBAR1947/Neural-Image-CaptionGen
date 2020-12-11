@@ -22,11 +22,8 @@ def train_step(img_tensor, target):
 			dec_input = tf.expand_dims(target[:, i], 1)
 
 	total_loss = (loss / int(target.shape[1]))
-
 	trainable_variables = encoder.trainable_variables + decoder.trainable_variables
-
 	gradients = tape.gradient(loss, trainable_variables)
-
 	optimizer.apply_gradients(zip(gradients, trainable_variables))
 
 	return loss, total_loss

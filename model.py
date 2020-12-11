@@ -5,8 +5,6 @@ def map_func(img_name, cap):
   return img_tensor, cap
 
 
-# Feel free to change these parameters according to your system's configuration
-
 def model_util(img_name_train,cap_train, ):
 	
 	#test-args
@@ -78,8 +76,7 @@ class RNN_Decoder(tf.keras.Model):
     output, state = self.gru(x)
 
     x = self.fc1(output)
-    x = tf.reshape(x, (-1, x.shape[2]))
-    x = self.fc2(x)
+    x = self.fc2(tf.reshape(x, (-1, x.shape[2])))
 
     return x, state, attention_weights
 
